@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: aliceblue;
+
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #00001a;
+}
+        /* navbar part  */
+li{
+  cursor: pointer;
+  list-style: none;
+  
+}
+.nav1 img{
+    height:20px ;
+    width: 20px;
+    display: none;
+  
+    
+}
+
+a{
+  text-decoration: none;
+  
+}
+ nav .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+  }
+  
+.list a:hover{
+    background-color: #1a75ff;
+    border-radius: 10px;
+    padding: 8px;
+}
+nav ul li{
+    font-weight: 500;
+    /* gap: 25px; */
+    margin-right: 50px;
+   
+}
+      /* section part one  */
+
+.part-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-left-one {
+  font-size: 15px;
+}
+.main-left-one img {
+  height: 18px;
+  width: 18px;
+}
+.hei {
+  font-size: 20px;
+}
+
+.col {
+  color: #ffcc00;
+  font-size: 13px;
+}
+.main-right-one img {
+  height: 225px;
+  width: 300px;
+}
+
+      /* section part two  */
+
+.part-two{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.part-two p {
+    text-decoration:underline blue;
+}
+
+.pro-img-one img {
+  height: 150px;
+  width: 180px;
+  margin: 5px;
+}
+
+ /* section part three  */
+
+.part-three {
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-three img {
+  height: 20px;
+  width: 20px;
+}
+
+.part-three p {
+    text-decoration:underline blue;
+}
+
+.part-three-a{
+    margin: 5px ;
+}
+
+
+    /* media query  */
+
+    /*
+  NOTE:-
+        when screen size 400px than media query output show 
+        media query output assignment 
+        1. responesive clone (first assignment complete)
+        2. 400px screen size (hambrger.png) image show (second assignment complete) 
+
+   --> sir i request you please give me ans my coding logics kaise hai bata dena please or kya improvement karu ?
+   bhut kuch baki rhta hai pr itna best nhi ban patA  hai ap jesse bante ho pir bhi me puri koshish krta hu 
+  
+  
+  */
+@media (max-width:400px) {
+
+    nav .list {
+        display: none;
+        
+    }
+    .nav1 img{
+        display: block;
+        
+    }   
+    .main-left-one {
+      /* font-size: 15px; */
+      text-align: center;
+    }
+    
+    .part-one{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-right-one img {
+      height: 100px;
+      width: 125px;
+    }
+    .part-two{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+.pro-img-one img {
+  display: block;
+  height: 80px;
+  width: 100px;
+  margin: 2px;
+}
+
+    .part-three{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
